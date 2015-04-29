@@ -1696,10 +1696,6 @@ python-ujson:
   ubuntu:
     pip:
       packages: [ujson]
-python-unidecode:
-  ubuntu:
-    pip:
-      packages: [unidecode]
 python-urlgrabber:
   fedora: [python-urlgrabber]
   ubuntu:
