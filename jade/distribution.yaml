@@ -123,6 +123,27 @@ repositories:
       url: https://github.com/WPI-RAIL/async_web_server_cpp.git
       version: develop
     status: maintained
+  audio_common:
+    doc:
+      type: git
+      url: https://github.com/ros-drivers/audio_common.git
+      version: hydro-devel
+    release:
+      packages:
+      - audio_capture
+      - audio_common
+      - audio_common_msgs
+      - audio_play
+      - sound_play
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/ros-gbp/audio_common-release.git
+      version: 0.2.7-0
+    source:
+      type: git
+      url: https://github.com/ros-drivers/audio_common.git
+      version: hydro-devel
+    status: maintained
   battery_monitor_rmp:
     doc:
       type: git
@@ -170,6 +191,11 @@ repositories:
       url: https://github.com/ros/bond_core.git
       version: master
     status: maintained
+  bta_ros:
+    doc:
+      type: git
+      url: https://github.com/voxel-dot-at/bta_ros.git
+      version: master
   calibration:
     doc:
       type: git
@@ -396,6 +422,11 @@ repositories:
       url: https://github.com/cram-code/cram_3rdparty.git
       version: master
     status: maintained
+  demo_pioneer:
+    doc:
+      type: git
+      url: https://github.com/lagadic/demo_pioneer.git
+      version: master
   depthcloud_encoder:
     doc:
       type: git
@@ -467,6 +498,27 @@ repositories:
     source:
       type: git
       url: https://github.com/ros/dynamic_reconfigure.git
+      version: master
+    status: maintained
+  dynamixel_motor:
+    doc:
+      type: git
+      url: https://github.com/arebgun/dynamixel_motor.git
+      version: master
+    release:
+      packages:
+      - dynamixel_controllers
+      - dynamixel_driver
+      - dynamixel_motor
+      - dynamixel_msgs
+      - dynamixel_tutorials
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/arebgun/dynamixel_motor-release.git
+      version: 0.4.0-0
+    source:
+      type: git
+      url: https://github.com/arebgun/dynamixel_motor.git
       version: master
     status: maintained
   ecto:
@@ -559,7 +611,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/tork-a/euslisp-release.git
-      version: 9.12.2-0
+      version: 9.14.0-0
     status: developed
   executive_smach:
     doc:
@@ -1005,6 +1057,21 @@ repositories:
       url: https://github.com/ros-visualization/interactive_markers.git
       version: indigo-devel
     status: maintained
+  iot_bridge:
+    doc:
+      type: git
+      url: https://github.com/corb555/iot_bridge.git
+      version: master
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/corb555/iot_bridge-release.git
+      version: 0.8.2-0
+    source:
+      type: git
+      url: https://github.com/corb555/iot_bridge.git
+      version: master
+    status: developed
   ivcon:
     doc:
       type: git
@@ -1037,6 +1104,85 @@ repositories:
       url: https://github.com/ros-gbp/joystick_drivers-release.git
       version: 1.10.1-0
     status: maintained
+  jsk_3rdparty:
+    doc:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_3rdparty.git
+      version: master
+    release:
+      packages:
+      - assimp_devel
+      - bayesian_belief_networks
+      - downward
+      - ff
+      - ffha
+      - jsk_3rdparty
+      - julius
+      - libsiftfast
+      - mini_maxwell
+      - nlopt
+      - opt_camera
+      - rospatlite
+      - rosping
+      - rostwitter
+      - voice_text
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/tork-a/jsk_3rdparty-release.git
+      version: 2.0.1-1
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_3rdparty.git
+      version: master
+    status: developed
+  jsk_common:
+    doc:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_common.git
+      version: master
+    release:
+      packages:
+      - dynamic_tf_publisher
+      - image_view2
+      - jsk_common
+      - jsk_data
+      - jsk_network_tools
+      - jsk_tilt_laser
+      - jsk_tools
+      - jsk_topic_tools
+      - multi_map_server
+      - virtual_force_publisher
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/tork-a/jsk_common-release.git
+      version: 2.0.0-1
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_common.git
+      version: master
+    status: developed
+  jsk_common_msgs:
+    doc:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_common_msgs.git
+      version: master
+    release:
+      packages:
+      - jsk_common_msgs
+      - jsk_footstep_msgs
+      - jsk_gui_msgs
+      - jsk_hark_msgs
+      - posedetection_msgs
+      - speech_recognition_msgs
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/tork-a/jsk_common_msgs-release.git
+      version: 2.0.0-0
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_common_msgs.git
+      version: master
+    status: developed
   jsk_roseus:
     doc:
       type: git
@@ -1049,7 +1195,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/tork-a/jsk_roseus-release.git
-      version: 1.3.5-0
+      version: 1.3.6-0
     source:
       type: git
       url: https://github.com/jsk-ros-pkg/jsk_roseus.git
@@ -1064,7 +1210,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/tork-a/jskeus-release.git
-      version: 1.0.6-0
+      version: 1.0.8-0
     status: developed
   korg_nanokontrol:
     doc:
@@ -1169,6 +1315,21 @@ repositories:
       url: https://github.com/WPI-RAIL/librms.git
       version: develop
     status: maintained
+  lyap_control:
+    doc:
+      type: git
+      url: https://bitbucket.org/AndyZe/lyap_control.git
+      version: master
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/AndyZelenak/lyap_control-release.git
+      version: 0.0.8-0
+    source:
+      type: git
+      url: https://bitbucket.org/AndyZe/lyap_control.git
+      version: master
+    status: maintained
   m4atx_battery_monitor:
     doc:
       type: git
@@ -1183,6 +1344,26 @@ repositories:
       type: git
       url: https://github.com/WPI-RAIL/m4atx_battery_monitor.git
       version: develop
+    status: maintained
+  maggie_devices_msgs:
+    doc:
+      type: git
+      url: https://github.com/UC3MSocialRobots/maggie_devices_msgs.git
+      version: hydro-devel
+    source:
+      type: git
+      url: https://github.com/UC3MSocialRobots/maggie_devices_msgs.git
+      version: hydro-devel
+    status: maintained
+  maggie_skills_msgs:
+    doc:
+      type: git
+      url: https://github.com/UC3MSocialRobots/maggie_skills_msgs.git
+      version: hydro-devel
+    source:
+      type: git
+      url: https://github.com/UC3MSocialRobots/maggie_skills_msgs.git
+      version: hydro-devel
     status: maintained
   manipulation_msgs:
     release:
@@ -1200,7 +1381,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/mavlink/mavlink-gbp-release.git
-      version: 2015.5.18-0
+      version: 2015.6.12-0
     status: maintained
   mavros:
     doc:
@@ -1288,6 +1469,13 @@ repositories:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/microstrain_3dmgx2_imu-release.git
       version: 1.5.12-0
+    status: maintained
+  mongo_cxx_driver:
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/ros-gbp/mongo_cxx_driver-release.git
+      version: 1.0.2-1
     status: maintained
   moveit_core:
     doc:
@@ -1415,7 +1603,11 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/carnegieroboticsllc/multisense_ros-release.git
-      version: 3.4.3-0
+      version: 3.4.4-0
+    source:
+      type: hg
+      url: https://bitbucket.org/crl/multisense_ros
+      version: default
     status: developed
   mvsim:
     doc:
@@ -1532,7 +1724,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-naoqi/naoqi_bridge_msgs-release.git
-      version: 0.0.1-0
+      version: 0.0.2-0
     source:
       type: git
       url: https://github.com/ros-naoqi/naoqi_bridge_msgs.git
@@ -1557,7 +1749,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-naoqi/naoqi_rosbridge-release.git
-      version: 0.0.5-0
+      version: 0.1.1-0
     source:
       type: git
       url: https://github.com/ros-naoqi/alrosbridge.git
@@ -1797,7 +1989,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/object_recognition_ros_visualization-release.git
-      version: 0.3.6-1
+      version: 0.3.7-0
     source:
       type: git
       url: https://github.com/wg-perception/object_recognition_ros_visualization.git
@@ -1890,7 +2082,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/opencv3-release.git
-      version: 2.9.6-0
+      version: 3.0.0-1
     status: maintained
   opencv_candidate:
     release:
@@ -1926,7 +2118,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/openslam_gmapping-release.git
-      version: 0.1.0-0
+      version: 0.1.1-0
     source:
       type: git
       url: https://github.com/ros-perception/openslam_gmapping.git
@@ -2020,7 +2212,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-naoqi/pepper_robot-release.git
-      version: 0.1.2-0
+      version: 0.1.3-0
     source:
       type: git
       url: https://github.com/ros-naoqi/pepper_robot.git
@@ -2035,15 +2227,29 @@ repositories:
       packages:
       - pcl_ros
       - perception_pcl
-      - pointcloud_to_laserscan
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/perception_pcl-release.git
-      version: 1.2.6-1
+      version: 1.3.0-0
     source:
       type: git
       url: https://github.com/ros-perception/perception_pcl.git
       version: indigo-devel
+    status: maintained
+  pid:
+    doc:
+      type: git
+      url: https://bitbucket.org/AndyZe/pid.git
+      version: master
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/AndyZelenak/pid-release.git
+      version: 0.0.6-0
+    source:
+      type: git
+      url: https://bitbucket.org/AndyZe/pid.git
+      version: master
     status: maintained
   pluginlib:
     doc:
@@ -2070,6 +2276,21 @@ repositories:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/pocketsphinx-release.git
       version: 0.4.0-0
+    status: maintained
+  pointcloud_to_laserscan:
+    doc:
+      type: git
+      url: https://github.com/ros-perception/pointcloud_to_laserscan.git
+      version: indigo-devel
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/ros-gbp/pointcloud_to_laserscan-release.git
+      version: 1.3.0-0
+    source:
+      type: git
+      url: https://github.com/ros-perception/pointcloud_to_laserscan.git
+      version: indigo-devel
     status: maintained
   pointgrey_camera_driver:
     doc:
@@ -2169,7 +2390,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/qt_gui_core-release.git
-      version: 0.2.27-0
+      version: 0.2.28-0
     source:
       type: git
       url: https://github.com/ros-visualization/qt_gui_core.git
@@ -2356,7 +2577,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/cra-ros-pkg/robot_localization-release.git
-      version: 2.2.0-1
+      version: 2.2.1-0
     source:
       type: git
       url: https://github.com/cra-ros-pkg/robot_localization.git
@@ -2723,7 +2944,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/rospilot/rospilot-release.git
-      version: 0.2.3-0
+      version: 0.2.5-0
     source:
       type: git
       url: https://github.com/rospilot/rospilot.git
@@ -3065,7 +3286,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/rst-tu-dortmund/teb_local_planner-release.git
-      version: 0.1.5-0
+      version: 0.1.9-0
     source:
       type: git
       url: https://github.com/rst-tu-dortmund/teb_local_planner.git
@@ -3294,6 +3515,11 @@ repositories:
       url: https://github.com/lagadic/visp-release.git
       version: 2.10.0-4
     status: maintained
+  visp_ros:
+    doc:
+      type: git
+      url: https://github.com/lagadic/visp_ros.git
+      version: master
   visualization_tutorials:
     doc:
       type: git
@@ -3315,6 +3541,26 @@ repositories:
       type: git
       url: https://github.com/ros-visualization/visualization_tutorials.git
       version: indigo-devel
+    status: maintained
+  vrep_ros_bridge:
+    doc:
+      type: git
+      url: https://github.com/lagadic/vrep_ros_bridge.git
+      version: master
+  vrpn:
+    doc:
+      type: git
+      url: https://github.com/vrpn/vrpn.git
+      version: master
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/clearpath-gbp/vrpn-release.git
+      version: 0.7.33-6
+    source:
+      type: git
+      url: https://github.com/vrpn/vrpn.git
+      version: master
     status: maintained
   warehouse_ros:
     doc:
@@ -3351,7 +3597,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/ros-gbp/xacro-release.git
-      version: 1.10.2-0
+      version: 1.10.4-0
     source:
       type: git
       url: https://github.com/ros/xacro.git

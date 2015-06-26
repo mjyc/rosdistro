@@ -839,6 +839,9 @@ gstreamer0.10-plugins-ugly:
     raring: [gstreamer0.10-plugins-ugly]
     saucy: [gstreamer0.10-plugins-ugly]
     trusty: [gstreamer0.10-plugins-ugly]
+    utopic: [gstreamer0.10-plugins-ugly]
+    vivid: [gstreamer0.10-plugins-ugly]
+    wily: [gstreamer0.10-plugins-ugly]
 gstreamer0.10-pocketsphinx:
   fedora: [pocketsphinx-plugin]
   ubuntu: [gstreamer0.10-pocketsphinx]
@@ -1413,6 +1416,8 @@ libhal-dev:
   ubuntu:
     apt:
       packages: [libhal-dev]
+libicu-dev:
+  ubuntu: [libicu-dev]
 libirrlicht-dev:
   arch: [irrlicht]
   debian: [libirrlicht-dev]
@@ -1583,6 +1588,8 @@ libnl-dev:
     portage:
       packages: [dev-libs/libnl]
   ubuntu: [libnl-dev]
+libnss3-dev:
+  ubuntu: [libnss3-dev]
 libogg:
   arch: [libogg]
   debian: [libogg-dev]
@@ -2326,6 +2333,12 @@ libx264-dev:
   debian: [libx264-dev]
   fedora: [x264-devel]
   ubuntu: [libx264-dev]
+libx52pro:
+  debian: [libx52pro0]
+  ubuntu: [libx52pro0]
+libx52pro-dev:
+  debian: [libx52pro-dev]
+  ubuntu: [libx52pro-dev]
 libxaw:
   arch: [libxaw]
   debian: [libxaw7-dev]
@@ -2499,7 +2512,18 @@ mongodb-dev:
   debian: [libmongo-client-dev, mongodb-dev]
   fedora: [libmongo-client-devel, mongodb-devel]
   macports: [mongodb]
-  ubuntu: [libmongo-client-dev, mongodb-dev]
+  ubuntu:
+    lucid: [libmongo-client-dev, mongodb-dev]
+    maverick: [libmongo-client-dev, mongodb-dev]
+    natty: [libmongo-client-dev, mongodb-dev]
+    oneiric: [libmongo-client-dev, mongodb-dev]
+    precise: [libmongo-client-dev, mongodb-dev]
+    quantal: [libmongo-client-dev, mongodb-dev]
+    raring: [libmongo-client-dev, mongodb-dev]
+    saucy: [libmongo-client-dev, mongodb-dev]
+    trusty: [libmongo-client-dev, mongodb-dev]
+    utopic: [libmongo-client-dev]
+    vivid: [libmongo-client-dev]
 mono-devel:
   debian: [mono-devel]
   fedora: [mono-devel]
@@ -2755,11 +2779,19 @@ qtmobility-dev:
   debian: [qtmobility-dev]
   fedora: [qt-mobility-devel]
   ubuntu: [qtmobility-dev]
+r-base:
+  ubuntu: [r-base]
+r-base-dev:
+  ubuntu: [r-base-dev]
 readline-dev:
   arch: [readline]
   debian: [libreadline-dev]
   fedora: [readline-devel]
   ubuntu: [libreadline-dev]
+recode:
+  arch: [recode]
+  fedora: [recode-devel]
+  ubuntu: [recode]
 recordmydesktop:
   arch: [recordmydesktop]
   debian: [recordmydesktop]
@@ -3047,6 +3079,8 @@ texlive-fonts-recommended:
   fedora: [texlive-times, texlive-helvetic]
   macports: [texlive-fonts-recommended]
   ubuntu: [texlive-fonts-recommended]
+texlive-full:
+  ubuntu: [texlive-full]
 texlive-latex-base:
   arch: [texlive-core]
   debian: [texlive-latex-base]
